@@ -1,0 +1,42 @@
+body {
+  font-family: monospace;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.menu .form .inline.fields {
+  margin-bottom: 0;
+}
+
+.page .columns {
+  margin-top: 90px;
+  padding: 0 1rem;
+}
+
+.page .columns .column {
+  /*border: 1px dotted black;*/
+  padding: 0 2rem !important;
+}
+
+pre {
+  white-space: pre-wrap;
+  font-size: inherit;
+  line-height: normal;
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+textarea {
+  font-family: monospace;
+}
+
+.search-container {
+  padding: 0 1erm;
+}

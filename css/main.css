@@ -1,5 +1,9 @@
-body {
+body, textarea {
   font-family: monospace;
+}
+
+#nav-wrapper {
+  flex-wrap: nowrap;
 }
 
 .page {
@@ -9,19 +13,17 @@ body {
   top: 0;
   z-index: -1;
   overflow: hidden;
+  background-color: #DDD;
 }
 
-.menu .form .inline.fields {
-  margin-bottom: 0;
+#columns {
+  margin-top: 70px;
+  /*padding: 0 1rem;*/
+  display: flex;
 }
 
-.page .columns {
-  margin-top: 90px;
-  padding: 0 1rem;
-}
-
-.page .columns .column {
-  /*border: 1px dotted black;*/
+.column {
+  display: inline-block;
   padding: 0 2rem !important;
 }
 
@@ -33,10 +35,41 @@ pre {
   margin-bottom: .5rem;
 }
 
-textarea {
-  font-family: monospace;
+/* Modal top margin tweak
+.modal-dialog {
+  margin-top: 70px;
+}*/
+
+.modal-content {
+  box-shadow: 2px 2px 2px;
 }
 
-.search-container {
-  padding: 0 1erm;
+/* Folating labels tweak */
+.form-floating>label {
+  left: unset;
+}
+
+#content-input {
+  height: 70vh;
+}
+
+.full-width {
+  width: 100%;
+}
+
+nav {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#alertWrapper {
+  text-align: center;
+}
+
+#alert {
+  display: inline-block;
+  box-shadow: 3px 3px 3px;
+}
+
+.hidden {
+  display: none;
 }
